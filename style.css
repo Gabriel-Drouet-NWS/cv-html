@@ -6,7 +6,6 @@ body {
     margin: 0;                      /* Supprime les marges par défaut */
     padding: 0;                     /* Supprime les paddings par défaut */
     background-color: #22243D;      /* Bleu nuit */
-    color: #fff;                    /* Texte en blanc pour la lisibilité */
 }
 
 /* --- Conteneur principal de la page (contenu central) --- */
