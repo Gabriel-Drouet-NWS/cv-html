@@ -1,0 +1,151 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* En-tête */
+.header {
+    text-align: center;
+    background-color: #f7d348;
+    color: #333;
+    padding: 20px 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 10px 0;
+}
+
+/* Sections */
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    border-bottom: 2px solid #f7d348;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.contact, .competences, .interets {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.competences, .interets {
+    padding-left: 20px;
+}
+
+/* Listes */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px 0;
+    color: #555;
+    list-style-type: none;
+}
+
+/* Informations de contact */
+.contact p, .competences li, .interets li {
+    margin: 5px 0;
+}
+
+/* Expérience professionnelle */
+ul li strong {
+    color: #000;
+}
+
+/* Centres d'intérêt */
+.interets ul li::before {
+    content: "• ";         /* Ajoute la puce */
+    color: #f7d348;        /* Couleur jaune */
+    font-size: 24px;       /* Augmente la taille de la puce */
+    line-height: 1;        /* Assure un alignement correct */
+    vertical-align: middle; /* Aligne verticalement avec le texte */
+}
+
+/* Compétences */
+.competences ul li::before {
+    content: "\2714  "; /* ✔ en Unicode */
+    color: #28a745;    /* Vert */
+}
+
+/* Parcours */
+.parcours ul li::before {
+    content: "\2794  "; /* ➔ en Unicode */
+    color: #007bff;    /* Bleu */
+}
+
+/* Expérience professionnelle */
+.experience ul li::before {
+    content: "\2794  "; /* ★ en Unicode */
+    color: #007bff;    /* Orange vif */
+}
+
+/* Style mobile */
+@media (max-width: 768px) {
+    .contact, .competences, .interets {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px; /* Espace pour le bouton */
+    box-sizing: border-box;
+}
+
+.download-section {
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745; /* Vert */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #218838; /* Vert plus foncé au survol */
+}
