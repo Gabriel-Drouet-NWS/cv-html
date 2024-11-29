@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <!-- Définition du jeu de caractères UTF-8 pour une meilleure compatibilité avec les accents et caractères spéciaux -->
+    <meta charset="UTF-8"> 
+    <!-- Balise permettant l'adaptation du contenu sur les différents écrans, surtout mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Gabriel Drouet</title>
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>CV - Gabriel Drouet</title> 
+    <!-- Lien vers la feuille de style CSS externe -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Barre orange en haut avec un titre principal -->
+    <div class="header-bar">
+        <!-- Titre principal du CV centré -->
+        <h1 class="cv-title">CURRICULUM VITAE</h1> 
+    </div>
+
+    <!-- Conteneur principal pour regrouper le contenu -->
     <div class="container">
+        <!-- Section d'en-tête avec la photo et la présentation -->
         <div class="header">
+            <!-- Photo de profil du CV -->
             <img src="PhotoCV.jpg" alt="Photo de Gabriel Drouet" class="photo-profil">
+            <!-- Nom complet de l'utilisateur -->
             <h1>Gabriel Drouet</h1>
+            <!-- Texte de présentation personnelle -->
             <p>Reconversion professionnelle dans le marketing digital. Stratégie de communication, création de contenu, alimentation des réseaux sociaux, je me forme aux métiers du numérique.</p>
         </div>
         
+        <!-- Section pour les informations de contact -->
         <div class="section contact">
             <h2>Me contacter</h2>
+            <!-- Informations de contact : téléphone, adresse, email -->
             <p>Téléphone: 07 67 16 58 33</p>
             <p>Adresse: 77 ruelle des Lilas, 27340 Criquebeuf sur Seine</p>
             <p>Email: gabriel.drouet27@gmail.com</p>
         </div>
 
+        <!-- Section des compétences professionnelles -->
         <div class="section competences">
             <h2>Compétences</h2>
             <ul>
+                <!-- Liste des compétences spécifiques -->
                 <li>Photographie</li>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
@@ -31,6 +51,7 @@
             </ul>
         </div>
 
+        <!-- Section sur le parcours éducatif -->
         <div class="section parcours">
             <h2>Mon parcours</h2>
             <ul>
@@ -40,18 +61,22 @@
             </ul>
         </div>
 
+        <!-- Section sur les expériences professionnelles -->
         <div class="section experience">
             <h2>Expérience professionnelle</h2>
             <ul>
+                <!-- Liste chronologique des expériences professionnelles avec dates et détails -->
                 <li>Sept. 2023: Stage chez Capfinances - Création d'affiches, reproduction sur Illustrator</li>
                 <li>Jan. 2023: Aptar Pharma - Conducteur de ligne automatique</li>
                 <li>Nov. 2020: Stage chez Baton Rouge - Technique d'impression d'affiches</li>
             </ul>
         </div>
         
+        <!-- Section des centres d'intérêt -->
         <div class="section interets">
             <h2>Centres d'intérêt</h2>
             <ul>
+                <!-- Liste des intérêts personnels -->
                 <li>Jeux vidéo</li>
                 <li>Impression 3D</li>
                 <li>Photographie</li>
@@ -59,6 +84,7 @@
         </div>
     </div>
 
+    <!-- Section de téléchargement avec un lien vers le fichier PDF du CV -->
     <div class="download-section">
         <a href="CV28112024.pdf" download class="download-button">Télécharger mon CV</a>
     </div>

@@ -1,151 +1,187 @@
-/* Style général */
+/* --- Configuration générale de la page --- */
+
+/* Fond bleu nuit pour le body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Police générale de la page */
+    margin: 0;                      /* Supprime les marges par défaut */
+    padding: 0;                     /* Supprime les paddings par défaut */
+    background-color: #22243D;      /* Bleu nuit */
+    color: #fff;                    /* Texte en blanc pour la lisibilité */
 }
 
+/* --- Conteneur principal de la page (contenu central) --- */
+
+/* Conteneur général avec fond blanc */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
+    max-width: 800px;               /* Largeur maximale du conteneur */
+    margin: 20px auto;              /* Centre horizontalement avec marge verticale */
+    background-color: #ffffff;      /* Fond blanc pour le contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour */
+    padding: 20px;                  /* Espacement interne du conteneur */
+    border-radius: 8px;             /* Coins arrondis */
 }
 
-/* En-tête */
+/* --- Barre supérieure en dégradé orange --- */
+
+/* Barre orange en haut avec dégradé vertical */
+.header-bar {
+    width: 100%;                    /* Prend toute la largeur */
+    height: 40px;                   /* Hauteur fixe de la barre */
+    background: linear-gradient(to bottom, #B77B32, #FFAF4D); /* Dégradé vertical orange */
+    text-align: center;             /* Centrage horizontal du texte */
+    display: flex;                  /* Flexbox pour centrer */
+    justify-content: center;        /* Centrage horizontal */
+    align-items: center;            /* Centrage vertical */
+}
+
+/* Titre de la barre */
+.cv-title {
+    font-size: 24px;                /* Taille du texte */
+    color: #fff;                    /* Couleur du texte blanc */
+    margin: 0;                      /* Supprime les marges */
+    font-family: Arial, sans-serif; /* Police de caractère */
+}
+
+/* --- En-tête général du CV --- */
+
+/* Style de l'en-tête du CV */
 .header {
-    text-align: center;
-    background-color: #f7d348;
-    color: #333;
-    padding: 20px 0;
-    border-radius: 8px 8px 0 0;
+    text-align: center;             /* Centrage du texte */
+    background-color: #f7d348;      /* Fond jaune clair */
+    color: #333;                    /* Couleur du texte */
+    padding: 20px 0;                /* Espacement interne vertical */
+    border-radius: 8px 8px 0 0;     /* Coins arrondis en haut */
 }
 
+/* Titre principal dans l'en-tête */
 .header h1 {
-    margin: 0;
-    font-size: 28px;
+    margin: 0;                      /* Supprime les marges */
+    font-size: 28px;                /* Taille du texte */
 }
 
+/* Sous-titre dans l'en-tête */
 .header p {
-    margin: 10px 0;
+    margin: 10px 0;                 /* Marge verticale */
 }
 
-/* Sections */
+/* --- Sections principales (expérience, compétences, etc.) --- */
+
+/* Section générale */
 .section {
-    margin: 20px 0;
+    margin: 20px 0;                 /* Marge verticale entre les sections */
 }
 
+/* Style des titres de section */
 .section h2 {
-    border-bottom: 2px solid #f7d348;
-    padding-bottom: 5px;
-    color: #333;
+    border-bottom: 2px solid #f7d348; /* Ligne de séparation jaune */
+    padding-bottom: 5px;              /* Espacement en bas du texte */
+    color: #333;                      /* Couleur du texte */
 }
 
+/* --- Mise en page des colonnes (contact, compétences, etc.) --- */
+
+/* Style des colonnes */
 .contact, .competences, .interets {
-    width: 48%;
-    display: inline-block;
-    vertical-align: top;
+    width: 48%;                      /* Largeur des colonnes */
+    display: inline-block;           /* Affichage en ligne */
+    vertical-align: top;             /* Alignement vertical en haut */
 }
 
+/* Espacement supplémentaire pour compétences et intérêts */
 .competences, .interets {
-    padding-left: 20px;
+    padding-left: 20px;              /* Espacement interne à gauche */
 }
 
-/* Listes */
+/* --- Listes générales --- */
+
+/* Liste sans padding ni marge */
 ul {
-    padding: 0;
-    margin: 0;
+    padding: 0;                      /* Supprime le padding */
+    margin: 0;                       /* Supprime la marge */
 }
 
+/* Style des éléments de liste */
 li {
-    padding: 5px 0;
-    color: #555;
-    list-style-type: none;
+    padding: 5px 0;                  /* Espacement vertical des éléments */
+    color: #555;                     /* Couleur de texte grise */
+    list-style-type: none;           /* Supprime les puces de liste par défaut */
 }
 
-/* Informations de contact */
+/* --- Informations spécifiques aux sections --- */
+
+/* Style des éléments de contact, compétences et intérêts */
 .contact p, .competences li, .interets li {
-    margin: 5px 0;
+    margin: 5px 0;                   /* Marge verticale */
 }
 
-/* Expérience professionnelle */
+/* Gras pour les expériences professionnelles */
 ul li strong {
-    color: #000;
+    color: #000;                     /* Couleur du texte en noir */
 }
 
-/* Centres d'intérêt */
+/* --- Styles spécifiques aux puces de liste --- */
+
+/* Puce personnalisée pour les centres d'intérêt */
 .interets ul li::before {
-    content: "• ";         /* Ajoute la puce */
-    color: #f7d348;        /* Couleur jaune */
-    font-size: 24px;       /* Augmente la taille de la puce */
-    line-height: 1;        /* Assure un alignement correct */
-    vertical-align: middle; /* Aligne verticalement avec le texte */
+    content: "• ";                   /* Ajoute une puce circulaire */
+    color: #f7d348;                  /* Couleur jaune */
+    font-size: 30px;                 /* Taille de la puce */
+    line-height: 1.5;                /* Hauteur de ligne */
+    vertical-align: middle;          /* Alignement vertical */
 }
 
-/* Compétences */
+/* Puce personnalisée pour les compétences */
 .competences ul li::before {
-    content: "\2714  "; /* ✔ en Unicode */
-    color: #28a745;    /* Vert */
+    content: "\2714  ";              /* ✔ en Unicode */
+    color: #28a745;                  /* Couleur verte */
+    font-size: 24px;                 /* Taille ajustée */
 }
 
-/* Parcours */
-.parcours ul li::before {
-    content: "\2794  "; /* ➔ en Unicode */
-    color: #007bff;    /* Bleu */
-}
+/* --- Styles responsives pour mobile --- */
 
-/* Expérience professionnelle */
-.experience ul li::before {
-    content: "\2794  "; /* ★ en Unicode */
-    color: #007bff;    /* Orange vif */
-}
-
-/* Style mobile */
 @media (max-width: 768px) {
+    /* Ajustement en affichage mobile */
     .contact, .competences, .interets {
-        display: block;
-        width: 100%;
-        padding: 0;
+        display: block;              /* Affichage en bloc */
+        width: 100%;                 /* Prend toute la largeur */
+        padding: 0;                  /* Supprime le padding */
     }
 }
 
+/* --- Style de la photo de profil --- */
+
 .photo-profil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+    width: 150px;                    /* Largeur de la photo */
+    height: 150px;                   /* Hauteur de la photo */
+    border-radius: 50%;              /* Rond */
+    object-fit: cover;               /* Recadre sans déformation */
+    margin-bottom: 20px;             /* Marge en bas */
 }
 
-.container {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 60px; /* Espace pour le bouton */
-    box-sizing: border-box;
-}
+/* --- Section de téléchargement --- */
 
 .download-section {
-    width: 100%;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 10px 0;
+    width: 100%;                     /* Largeur pleine */
+    text-align: center;              /* Centrage du texte */
+    background: linear-gradient(to bottom, #B77B32, #FFAF4D); /* Dégradé vertical orange */
+    padding: 10px 0;                 /* Padding vertical */
 }
+
+/* --- Bouton de téléchargement --- */
 
 .download-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #28a745; /* Vert */
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: inline-block;           /* Affichage en ligne */
+    padding: 12px 25px;              /* Espacement interne */
+    background-color: #22243D;       /* Bleu nuit */
+    color: white;                    /* Couleur du texte blanc */
+    text-decoration: none;           /* Supprime le soulignement */
+    font-size: 16px;                 /* Taille de la police */
+    font-weight: bold;               /* Texte en gras */
+    border-radius: 5px;              /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition fluide */
 }
 
+/* Effet au survol du bouton */
 .download-button:hover {
-    background-color: #218838; /* Vert plus foncé au survol */
+    background-color: #3B3E5B;       /* Bleu plus foncé au survol */
 }
